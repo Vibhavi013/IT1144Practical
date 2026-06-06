@@ -1,0 +1,14 @@
+body{
+	text-align:center;
+	margin-top:100px;
+	}
+#colorBtn{
+	color:black;
+}
+button{
+	background-color:black;
+	color:white;
+	border-radius:20px;
+	padding:10px 20px;
+	display:block;margin:auto;
+}
