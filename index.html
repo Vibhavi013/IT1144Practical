@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendyShop · Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<video autoplay muted loop playsinline id="bgVideo">
+        <source src="D:\1144\html\shop\WhatsApp Video 2026-06-13 at 13.07.08.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">Trendy<span class="light">Shop</span></div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="checkout.html">Checkout</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-btn" onclick="toggleTheme()" id="themeBtn">🌙 Dark</button>
+                <button class="cart-btn" onclick="openCart()">🛒 <span id="cartCount">0</span></button>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <h1>All Products</h1>
+            <p>Curated essentials for everyday style.</p>
+        </section>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&auto=format&fit=crop" alt="dress">
+                </div>
+                <div class="product-info">
+                    <h3>summer yellow dress</h3>
+                    <div class="price">$42</div>
+                    <button class="btn-add" data-name="summer yellow dress" data-price="42">add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&auto=format&fit=crop" alt="sneakers">
+                </div>
+                <div class="product-info">
+                    <h3>leather sneakers</h3>
+                    <div class="price">$68</div>
+                    <button class="btn-add" data-name="leather sneakers" data-price="68">add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&auto=format&fit=crop" alt="watch">
+                </div>
+                <div class="product-info">
+                    <h3>minimalist white watch</h3>
+                    <div class="price">$54</div>
+                    <button class="btn-add" data-name="minimalist white watch" data-price="54">add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&auto=format&fit=crop" alt="casual">
+                </div>
+                <div class="product-info">
+                    <h3>casual autumn wear</h3>
+                    <div class="price">$56</div>
+                    <button class="btn-add" data-name="casual autumn wear" data-price="56">add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&auto=format&fit=crop" alt="runners">
+                </div>
+                <div class="product-info">
+                    <h3>red sport runners</h3>
+                    <div class="price">$74</div>
+                    <button class="btn-add" data-name="red sport runners" data-price="74">add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&auto=format&fit=crop" alt="sunglasses">
+                </div>
+                <div class="product-info">
+                    <h3>classic sunglasses</h3>
+                    <div class="price">$38</div>
+                    <button class="btn-add" data-name="classic sunglasses" data-price="38">add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&auto=format&fit=crop" alt="bag">
+                </div>
+                <div class="product-info">
+                    <h3>leather tote bag</h3>
+                    <div class="price">$89</div>
+                    <button class="btn-add" data-name="leather tote bag" data-price="89">add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?w=400&auto=format&fit=crop" alt="jacket">
+                </div>
+                <div class="product-info">
+                    <h3>denim jacket</h3>
+                    <div class="price">$95</div>
+                    <button class="btn-add" data-name="denim jacket" data-price="95">add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=400&auto=format&fit=crop" alt="scarf">
+                </div>
+                <div class="product-info">
+                    <h3>wool scarf</h3>
+                    <div class="price">$32</div>
+                    <button class="btn-add" data-name="wool scarf" data-price="32">add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f5b0?w=400&auto=format&fit=crop" alt="hat">
+                </div>
+                <div class="product-info">
+                    <h3>wool beanie hat</h3>
+                    <div class="price">$24</div>
+                    <button class="btn-add" data-name="wool beanie hat" data-price="24">add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?w=400&auto=format&fit=crop" alt="backpack">
+                </div>
+                <div class="product-info">
+                    <h3>canvas backpack</h3>
+                    <div class="price">$62</div>
+                    <button class="btn-add" data-name="canvas backpack" data-price="62">add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?w=400&auto=format&fit=crop" alt="wallet">
+                </div>
+                <div class="product-info">
+                    <h3>leather wallet</h3>
+                    <div class="price">$28</div>
+                    <button class="btn-add" data-name="leather wallet" data-price="28">add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-total">
+            <span>Total: $<span id="footerTotal">0.00</span></span>
+        </div>
+
+        <div class="footer">
+             <div class="social-links">
+        <p>Follow us</p>
+        <a href="https://wa.me/94751307502" target="_blank">WhatsApp</a> |  
+        <a href="https://www.facebook.com/share/1JJdWEiBKB/?mibextid=wwXIfr "target="_blank">Facebook</a> | 
+        <a href="#">LinkedIn</a>
+    </div>
+        </div>
+    </div>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-panel">
+            <h3>Your Cart</h3>
+            <ul id="cartList"></ul>
+            <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+            <div class="cart-actions">
+                <button onclick="closeCart()">Close</button>
+                <button onclick="goToCheckout()">Checkout</button>
+            </div>
+        </div>
+		
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
